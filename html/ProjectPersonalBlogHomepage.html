@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <title>Personal Blog Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body>
+		<header> <!--Top section of the webpage and nav list-->
+			<h1>Welcome to Francisco's Personal Blog Home Page</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#signin">Sign in to interact with the posts</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#topics">Topics</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>			
+			<section id="signin">
+				<h2>Sign in</h2>
+				<form>
+					<label for="email">Email: </label>
+					<input type="email" id="email" required> 
+					<br>
+					<br>
+					<label for="email">Password: </label>
+					<input type="password" id="password required">
+					<br>
+					<br>
+					<button>Sign in</button>
+					<a href="forms.html" target="_blank">Not a member yet? Click this link to sign up</a>
+				</form>
+			</section>
+			<section id="about">
+				<h2>About me</h2>
+				<p>Hi everyone! My name is Francisco Chavez, and I am 25 years old. 
+				   I'm a computer engineering student on his final year who decided to
+				   dive deep into web development. This is a project where I'm using
+				   what I've learned so far about HTML.
+				</p>
+				<img src="MyPicture.jpeg" alt="A picture of the author of the page" width="300">
+				<p>This video below is what inspired me to follow this path and take a different approach: </p>
+				<iframe width="560" 
+						height="315" 
+						src="https://www.youtube.com/embed/teCubd25XwI?si=MN_o0M3Ak9mF6Cen" 
+						title="YouTube video player" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						referrerpolicy="strict-origin-when-cross-origin" 
+						allowfullscreen>
+				</iframe>
+			</section>
+			<section id="topics">
+				<h2>Topics</h2>
+				<p>Here you can learn about two important topics in HTML: the html structure and semantic html</p>
+				<p>You can listen to some music while you read this</p>
+				<audio controls>
+					<source src="ambient-fantasy-517-314682.mp3" type="audio/mpeg">
+				</audio>
+				<article>
+					<h3>The HTML structure</h3>
+					<p>The basic HTML structure is as follows:</p>
+					<img src="htmlStructure.png" alt="The HTML structure" width="300">
+				</article>
+				<article>
+					<h3>Semantic HTML</h3>
+					<p>Learning about semantic HTML is important because:</p>
+					<ol>
+						<li>It's easier to read/scan HTML</li>
+						<li>Better for SEO (Search Engine Optimization)</li>
+						<li>Better for screan readers/accesibility</li>
+					</ol>
+				</article>
+			</section>
+		</main>
+		<aside>
+			<h2>More links</h2>
+			<ul>
+				<li><a href="https://github.com/FranciscoChavezDev" target="_blank">My GitHub page</a></li>
+				<li><a href="https://www.instagram.com/hassam.chavez/" target="_blank">Instagram</a></li>
+			</ul>
+		</aside>
+		<footer id="contact">
+			<h2>Contact me at:</h2>
+			<ul>
+				<li><a href="mailto:franciscoha2119@gmail.com">Email: franciscoha1921@gmail.com</a></li>
+				<li><a href="tel:+52123456789">Phone: +52123456789</a></li>
+			</ul>
+			<p>&copy; 2025 &middot; Francisco</p>
+		</footer>
+  </body>
+</html>
