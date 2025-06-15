@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+		<title>Basic selectors</title>
+		<style>
+			* { /*Basic selector, targets all the elements */ /*The level of specificity increases as the code goes down, meaning the selector below overrides the ones above*/
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				color: red;
+			}
+
+            h1 { /*Type selector, targets all h1 types */
+                color:green;
+            }
+
+            p { /*Type selector, targets all p types */
+                color: blue;
+            }
+
+			.highlight{ /*Class selector, targets all elements with the class "highlight", classes can be reused across multiple elements */
+				background-color: yellow;
+				font-weight: bold;
+			}
+
+			input[type="text"]{ /*An attribute selector targets elements based on the presence or value of an attribute, has the same specificity as a class*/
+				background-color: blueviolet;
+				font-weight: bold;
+				color: white;
+			}
+
+			input[type="password"]{ /*An attribute selector targets elements based on the presence or value of an attribute, has the same specificity as a class*/
+				background-color: rgb(31, 106, 127);
+				font-weight: bold;
+				color: white;
+			}
+
+
+			#uniqueText{ /*id selector, targets the specific element with an id (an id is unique per element)*/
+				color: black;
+				font-size: 20px;
+			}
+
+			/*Despues siguen los elementos inline, estos tienen aun mas especificidad <p style="color: green;">This text is green.</p>*/
+
+			/*
+			Finally the one that overrides all, even inline styles is !important
+			p {
+      			color: purple !important;
+    		}
+			*/
+		</style>
+	</head>
+	<body>
+		<h1>Hello</h1>
+		<p>Paragraph</p>
+		<p class="highlight">Paragraph</p>
+		<p class="highlight">Paragraph</p>
+		<p class="highlight">Paragraph</p>
+		<p class="highlight">Paragraph</p>
+		<p>Paragraph not highlighted</p>
+		<p id="uniqueText">El mero mero</p>
+		<input type="text" placeholder="Enter your name">
+		<input type="password" placeholder="Enter your password">
+	</body>
+</html>
